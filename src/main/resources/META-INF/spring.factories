@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.github.sixinyiyu.database.monitor.spring.boot.autoconfigure.DatabaseMonitorAutoConfigure

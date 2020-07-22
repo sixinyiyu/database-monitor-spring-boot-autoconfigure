@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.github.sixinyiyu</groupId>
+		<artifactId>spring-dependency</artifactId>
+		<version>0.0.3.RELEASE</version>
+	</parent>
+	
+	<groupId>com.github.sixinyiyu</groupId>
+	<artifactId>database-monitor-kafka-spring-boot-starter</artifactId>
+	<name>database monitor kafka SpringBoot autoconfigure</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>基于kafka消息数据库监听器 Springboot自动装配</description>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<foundation-commons-util.version>1.0.0</foundation-commons-util.version>
+	</properties>
+	
+	<developers>
+        <developer>
+            <name>qingquanzhong</name>
+            <email>sixinyiyu@gmail.com</email>
+        </developer>
+    </developers>
+	
+	<dependencies>
+	
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        
+        <dependency>
+		    <groupId>org.springframework.kafka</groupId>
+		    <artifactId>spring-kafka</artifactId>
+		</dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        
+        <dependency>
+			<groupId>com.mgtj.commons</groupId>
+        	<artifactId>foundation-commons-util</artifactId>
+        	<version>${foundation-commons-util.version}</version>
+        </dependency>
+        
+	</dependencies>
+	
+</project>
